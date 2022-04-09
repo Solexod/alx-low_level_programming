@@ -18,8 +18,9 @@ while (num < 58)
 putchar(num);
 if (num < 57)
 {
-																	putchar(',');
-																	putchar(' ');													}
+putchar(',');
+putchar(' ');
+}
 num++;
 }
 putchar('\n');
