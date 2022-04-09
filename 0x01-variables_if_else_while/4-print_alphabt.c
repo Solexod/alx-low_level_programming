@@ -7,6 +7,7 @@
  * @void: Empty parameter list for main.
  *
  * Description: Prints the alphabet in lower case
+ * Skip q and e
  * Can only use putchar
  *
  * Return: 0 for success
@@ -14,10 +15,17 @@
 int main(void)
 {
 char letter = 'a';
-while (letter <= 'z')
+while (letter <= 'z')					{
+if (letter == 'q')
 {
-putchar(letter);
-letter++;						}
+letter++;																	}
+else if (letter == 'e')
+{
+																	letter++;																			}
+else
+{
+																			putchar(letter);																	letter++;												}
+}
 putchar('\n');
 return (0);
 }

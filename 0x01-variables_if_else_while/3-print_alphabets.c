@@ -6,7 +6,7 @@
  * main - Prints alphabet
  * @void: Empty parameter list for main.
  *
- * Description: Prints the alphabet in lower case
+ * Description: Prints the alphabet in lower and upper case
  * Can only use putchar
  *
  * Return: 0 for success
@@ -17,7 +17,14 @@ char letter = 'a';
 while (letter <= 'z')
 {
 putchar(letter);
-letter++;						}
+letter++;
+}
+letter = 'A';
+while (letter <= 'Z')
+{
+putchar(letter);
+letter++;
+}
 putchar('\n');
 return (0);
 }

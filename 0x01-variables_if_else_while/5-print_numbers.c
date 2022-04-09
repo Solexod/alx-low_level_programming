@@ -3,21 +3,21 @@
 #include <time.h>
 
 /**
- * main - Prints alphabet
+ * main - Prints base 10 numbers
  * @void: Empty parameter list for main.
  *
- * Description: Prints the alphabet in lower case
- * Can only use putchar
+ * Description: Prints numbers 0-9
  *
  * Return: 0 for success
  */
 int main(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char num = '0';
+while (num <= '9')
 {
-putchar(letter);
-letter++;						}
+putchar(num);
+num++;
+}
 putchar('\n');
 return (0);
 }
