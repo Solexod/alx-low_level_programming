@@ -15,14 +15,15 @@
 int main(void)
 {
 char letter = 'a';
-while (letter <= 'z')					{
-if (letter == 'q')
+while (letter <= 'z')
 {
+if (letter == 'q')
+{	
 letter++;																	}
 else if (letter == 'e')
 {
-																	letter++;																			}
-else
+																	letter++;																}
+																	else
 {
 																			putchar(letter);																	letter++;												}
 }
