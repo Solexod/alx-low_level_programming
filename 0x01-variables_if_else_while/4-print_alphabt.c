@@ -1,31 +1,19 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <time.h>
-
 /**
- * main - Prints alphabet
- * @void: Empty parameter list for main.
- *
- * Description: Prints the alphabet in lower case
- * Skip q and e
- * Can only use putchar
- *
- * Return: 0 for success
+ * main - main block
+ * Description: Get a random number and check its last digit, compare it with 5
+ * Return: 0
  */
 int main(void)
 {
-char letter = 'a';
-while (letter <= 'z')
+char c = 'a';
+while (c <= 'z')
 {
-if (letter == 'q')
-{	
-letter++;																	}
-else if (letter == 'e')
+if (c != 'e' && c != 'q')
 {
-																	letter++;																}
-																	else
-{
-																			putchar(letter);																	letter++;												}
+putchar(c);
+}
+c++;
 }
 putchar('\n');
 return (0);
