@@ -23,8 +23,7 @@ else if (rep < 10)
 {																	_putchar(' ');
 _putchar('0' + rep);
 }
-else																	{																	_putchar('0' + rep / 10);
-																	_putchar('0' + rep % 10);
+else																	{																	_putchar('0' + rep / 10);														_putchar('0' + rep % 10);
 }
 if (b < 9)
 {																	_putchar(',');
