@@ -1,13 +1,12 @@
-#include "main.h" 
+#include "main.h"
+
 /** 
-* reset_to_98 - reset argument to 98 
-* @n: pointer 
-* Return: void 
-*/ 
+ * reset_to_98 - function that takes a pointer to an integer parameter 
+ * @n: integer pointer 
+ * Return: 0 success
+ */ 
    
 void reset_to_98(int *n) 
-{ 
-		   
-		  *n = 98; 
-		    
+{
+		  *n = 98; 		    
 }
