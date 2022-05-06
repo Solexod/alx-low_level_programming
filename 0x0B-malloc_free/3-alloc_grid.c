@@ -8,6 +8,7 @@
  *
  * Return: pointer of an array of integers
  */
+
 int **alloc_grid(int width, int height)
 {
 int **gridout;
@@ -26,13 +27,12 @@ return (NULL);
 for (i = 0; i < height; i++)
 {
 gridout[i] = malloc(width * sizeof(int));
-if (gridout[i] == NUL)																	{
+if (gridout[i] == NUL)								{
 for (i--; i >= 0; i--)
 free(gridout[i]);														
 free(gridout);
-return (NULL);																													}
+return (NULL);									}
 }
-
 for (i = 0; i < height; i++)
 for (j = 0; j < width; j++)
 gridout[i][j] = 0;
